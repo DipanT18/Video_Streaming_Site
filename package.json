@@ -12,5 +12,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "prettier": "^3.8.3"
   }
 }
