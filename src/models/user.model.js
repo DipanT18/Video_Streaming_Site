@@ -51,7 +51,7 @@ userSchema.pre("save", async function (next) {
     //This is a negative check
     if(!this.isModified("password")) return next(); 
 
-    this.password = bcrypt.hash(this.password, 10) //this 10 is rounds
+    this.password = await bcrypt.hash(this.password, 10) //this 10 is rounds
     next()
 });
 
